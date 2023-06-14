@@ -18,14 +18,33 @@
       <div class="ml-6 my-4 md:ml-28">
         <img src="/src/images/image.png" alt="" class="h-4 md:h-6">
       </div>
+
       <div class="hidden space-x-5 mr-16 my-8 mt-4 text-white md:flex md:m-0 md:justify-items-center md:mr-8 md:my-auto"> 
         <a href="#" class="hover:bg-darkIndigo hover:rounded-full py-1 px-5 font-light">Learn</a>
         <a href="#" class="hover:bg-darkIndigo hover:rounded-full py-1 px-5 font-light">Build</a>
         <a href="#" class="hover:bg-darkIndigo hover:rounded-full py-1 px-5 font-light">Network</a>
         <a href="#" class="hover:bg-darkIndigo hover:rounded-full py-1 px-5 font-light">Community</a>
       </div>
+
+      <div class="space-x-5 mr-16 my-8 mt-4 text-white md:m-0 md:justify-items-center md:hidden">
+        <div class="w-10 h-10 cursor-pointer space-y-2">
+          <span class="w-10 h-[3px] flex bg-white rounded-lg"></span>
+          <span class="w-10 h-[3px] flex bg-white rounded-lg"></span>
+          <span class="w-10 h-[3px] flex bg-white rounded-lg"></span>
+        </div>
+
+        <div class="hidden" id="myNav">
+          <a href="#" class="hover:bg-darkIndigo hover:rounded-full py-1 px-5 font-light">Learn</a>
+          <a href="#" class="hover:bg-darkIndigo hover:rounded-full py-1 px-5 font-light">Build</a>
+          <a href="#" class="hover:bg-darkIndigo hover:rounded-full py-1 px-5 font-light">Network</a>
+          <a href="#" class="hover:bg-darkIndigo hover:rounded-full py-1 px-5 font-light">Community</a>
+        </div>
+
+      </div>
+
     </div>
   </nav>
+
   <!-- npx update-browserslist-db@latest -->
   
 </header>
@@ -171,26 +190,26 @@
     </div>
   <img src="../src/images/join.png" alt="">
     <div class="py-16 my-16 mx-auto text-center max-w-2xl">
-      <h2 class="text-white font-bold text-center mb-8 text-3xl">It's time to join the thousands of creators, artists, and developers using Solana.</h2>
+      <h2 class="text-white font-bold text-center m-auto text-sm mb-8 md:text-3xl">It's time to join the thousands of creators, artists, and developers using Solana.</h2>
       <a href="#" class="my-5 text-center mx-auto cursor-pointer text-white bg-gradient-to-r from-darkIndigo to-black rounded-full py-4 px-4 font-light hover:bg-gradient-to-l from-darkIndigo to-black md:my-5 md:mx-14 md:px-10 hover:-mt-5">START BUILDING</a>
     </div>
   </div>
 
 </section>
 <section class="footer">
-  <div class="flex flex-col-reverse text-white">
+  <div class="flex flex-col-reverse m-auto py-7 pl-5 justify-evenly text-white md:flex-row">
     <!-- first section of footer -->
-    <div>
+    <div class="space-y-6">
       <p>Managed by Solana Foundation</p>
 
       <!-- Socials -->
-      <div class="flex">
-        <a href=""></a>
-        <a href=""></a>
-        <a href=""></a>
-        <a href=""></a>
-        <a href=""></a>
-        <a href=""></a>
+      <div class="flex space-x-4">
+        <a href="http://www.youtube.com/solana" target="_blank"><img src="/src/images/Frameyoutube.png" alt=""></a>
+        <a href="http://www.twitter.com"><img src="/src/images/Frametwittr.png" alt=""></a>
+        <a href="http://www.discord.com"><img src="/src/images/Framediscord.png" alt=""></a>
+        <a href="http://www.reddit.com"><img src="/src/images/Framereddit.png" alt=""></a>
+        <a href="http://www.github.com"><img src="/src/images/Framegithub.png" alt=""></a>
+        <a href="http://www.telegram.com"><img src="/src/images/Frametelegram.png" alt=""></a>
       </div>
       <p class="text-slate-500">&copy; 2023 Solana Foundation. All rights reserved.</p>
     </div>
@@ -199,12 +218,12 @@
 
     <div>
       <ul class="list-none">
-        <li class="text-white">SOLANA</li>
-        <li class="text-slate-500">Grants</li>
-        <li class="text-slate-500">Break Solana</li>
-        <li class="text-slate-500">Media Kit</li>
-        <li class="text-slate-500">Careers</li>
-        <li class="text-slate-500">Disclaimer</li>
+        <a href="#"><li class="text-white">SOLANA</li></a>
+        <a href="#"><li class="text-slate-500">Grants</li></a>
+        <a href="#"><li class="text-slate-500">Break Solana</li></a>
+        <a href="#"><li class="text-slate-500">Media Kit</li></a>
+        <a href="#"><li class="text-slate-500">Careers</li></a>
+        <a href="#"><li class="text-slate-500">Disclaimer</li></a>
       </ul>
     </div>
 
@@ -212,15 +231,15 @@
 
     <div>
       <ul class="list-none">
-        <li class="text-white">GET CONNECTED</li>
-        <li class="text-slate-500">Ecosystem</li>
-        <li class="text-slate-500">Blog</li>
-        <li class="text-slate-500">Newsletter</li>
+        <a href="#"><li class="text-white">GET CONNECTED</li></a>
+        <a href="#"><li class="text-slate-500">Ecosystem</li></a>
+        <a href="#"><li class="text-slate-500">Blog</li></a>
+        <a href="#"><li class="text-slate-500">Newsletter</li></a>
       </ul>
     </div>
 
   </div>
 </section>
-
+<script src="script.js"></script>
 </body>
 </html>
