@@ -5,19 +5,20 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link href="/dist/output.css" rel="stylesheet">
 </head>
-<body class="bg-black overflow-x-hidden break-words box-border">
+<body id="body" class="bg-black overflow-x-hidden overflow-y-hidden break-words box-border">
 
-<header class="relative">
+<header>
 
   <div id="top" class="h-8 bg-blue-600 text-center text-[10px] w-full md:h-7 md:text-lg">
     <h5>BREAKPOINT 2023 - NEW CITY. NEW VIBES - GET EARLY ACCESS -></h5>
   </div>
 
-  <nav class="sticky top-0">
-    <div class="flex justify-between bg-black bg-opacity-60 h-16">
+  <nav class="container">
+    <div class="flex sticky justify-between bg-black bg-opacity-60 h-16 md:flex">
       <div class="ml-6 my-4 md:ml-28">
         <img src="/src/images/image.png" alt="" class="h-4 md:h-6">
       </div>
+    
 
       <div class="hidden space-x-5 mr-16 my-8 mt-4 text-white md:flex md:m-0 md:justify-items-center md:mr-8 md:my-auto"> 
         <a href="#" class="hover:bg-darkIndigo hover:rounded-full py-1 px-5 font-light">Learn</a>
@@ -25,24 +26,20 @@
         <a href="#" class="hover:bg-darkIndigo hover:rounded-full py-1 px-5 font-light">Network</a>
         <a href="#" class="hover:bg-darkIndigo hover:rounded-full py-1 px-5 font-light">Community</a>
       </div>
-
-      <div class="space-x-5 mr-16 my-8 mt-4 text-white md:m-0 md:justify-items-center md:hidden">
-        <div class="w-10 h-10 cursor-pointer space-y-2">
-          <span class="w-10 h-[3px] flex bg-white rounded-lg"></span>
-          <span class="w-10 h-[3px] flex bg-white rounded-lg"></span>
-          <span class="w-10 h-[3px] flex bg-white rounded-lg"></span>
-        </div>
-
-        <div class="hidden" id="myNav">
-          <a href="#" class="hover:bg-darkIndigo hover:rounded-full py-1 px-5 font-light">Learn</a>
-          <a href="#" class="hover:bg-darkIndigo hover:rounded-full py-1 px-5 font-light">Build</a>
-          <a href="#" class="hover:bg-darkIndigo hover:rounded-full py-1 px-5 font-light">Network</a>
-          <a href="#" class="hover:bg-darkIndigo hover:rounded-full py-1 px-5 font-light">Community</a>
-        </div>
-
+      <div id="hamBtn" class="mt-4 w-50 cursor-pointer space-y-2 md:hidden">
+        <span class="w-8 h-[3px] flex bg-white rounded-lg"></span>
+        <span class="w-8 h-[3px] flex bg-white rounded-lg"></span>
+        <span class="w-8 h-[3px] flex bg-white rounded-lg"></span>
       </div>
-
     </div>
+    <!-- Mobile Menu -->
+    <div id="myNav" class="z-50 absolute sm:self-center w-auto py-8 h-full right-6 left-6 space-y-6 text-white flex flex-col items-center self-end backdrop-blur-md drop-shadow-md md:hidden"> 
+      <a href="#" class="font-light">Learn</a>
+      <a href="#" class="font-light">Build</a>
+      <a href="#" class="font-light">Network</a>
+      <a href="#" class="font-light">Community</a>
+    </div>
+
   </nav>
 
   <!-- npx update-browserslist-db@latest -->
