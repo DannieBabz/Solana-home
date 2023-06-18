@@ -5,9 +5,14 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link href="/dist/output.css" rel="stylesheet">
 </head>
-<body id="body" class="bg-black overflow-x-hidden overflow-y-hidden break-words box-border">
-
+<body id="body" class="bg-black overflow-x-hidden box-border">
+<div id="preloader" class="flex justify-center items-center h-[100vh] w-[100%] bg-black">
+  <div id="loader" class="h-10 w-10 relative border-solid border-4 border-white">
+    <span id="spinner" class="h-3 w-3 bg-white absolute items-center"></span>
+  </div>
+</div>
 <header>
+
 
   <div id="top" class="h-8 bg-blue-600 text-center text-[10px] w-full md:h-7 md:text-lg">
     <h5>BREAKPOINT 2023 - NEW CITY. NEW VIBES - GET EARLY ACCESS -></h5>
@@ -237,6 +242,7 @@
 
   </div>
 </section>
+
 <script src="script.js"></script>
 </body>
 </html>
