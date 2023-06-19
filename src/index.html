@@ -5,7 +5,8 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link href="/dist/output.css" rel="stylesheet">
 </head>
-<body id="body" class="bg-black overflow-x-hidden overflow-y-hidden box-border">
+<body id="body" class="bg-black overflow-x-hidden overflow-y-hidden box-border break-words"> 
+
 <div id="preloader" class="flex justify-center items-center h-[100vh] w-[100%] bg-black">
   <div id="loader" class="h-10 animate-pulse w-10 relative border-solid border-4 border-white">
     <span id="spinner" class="h-3 w-3 bg-white absolute items-center"></span>
@@ -31,7 +32,7 @@
         <a href="#" class="hover:bg-darkIndigo hover:rounded-full py-1 px-5 font-light">Network</a>
         <a href="#" class="hover:bg-darkIndigo hover:rounded-full py-1 px-5 font-light">Community</a>
       </div>
-      <div id="hamBtn" class="mt-4 w-50 cursor-pointer space-y-2 md:hidden">
+      <div id="hamBtn" class="mt-4 w-50 mr-5 cursor-pointer space-y-2 md:hidden">
         <span class="w-8 h-[3px] flex bg-white rounded-lg"></span>
         <span class="w-8 h-[3px] flex bg-white rounded-lg"></span>
         <span class="w-8 h-[3px] flex bg-white rounded-lg"></span>
@@ -69,7 +70,7 @@
 </section>
 
 <!-- CLIENT -->
-<section class="mt-20 md:mt-28 text-center">
+<section class="mt-20 md:mt-28 w-full text-center">
   <small class="text-sm m-auto text-[#618ADC] md:m-auto">POWERING TOOLS AND INTEGRATIONS FROM COMPANIES ALL AROUND THE WORLD</small>
   <div class="flex flex-col text-center mx-auto md:flex-row md:mt-8">
     <img src="/src/images/brave.png" alt="" class="my-5 mx-auto w-20 h-9">
@@ -107,39 +108,39 @@
 
 <!-- HERO CONTENT -->
 
-  <div class="flex flex-col text-white m-8 justify-evenly md:flex-row md:m-14 md:mt-48">
+  <div class="px-5 flex flex-col text-white mt-20 w-full lg:mx-auto items-center lg:justify-evenly lg:flex-row lg:mt-48">
 
 
     <div>
       <h1 class="text-2xl md:text-4xl md:w-64 font-semibold">Made for mass adoption.</h1>
       <small class="text-xs text-slate-400"><span class="text-blue-500">&bull;</span>LIVE DATA</small>
     </div>
+
     <div>
-      <div class="p-4 md:w-80">
+      <div class="md:py-5 md:w-80">
         <h1 class="border-l-2 border-lightBlue font-semibold px-4">Fast</h1>
         <p class="text-xs text-slate-400">Don't keep your users waiting. Solana has block times of 400 milliseconds - and as hardware gets faster, so will the network</p>
         <small class="text-2xl"><span class="text-blue-500">&bull;</span>3,969</small><br>
         <small class="text-xs text-slate-400">TRANSACTIONS PER SECOND</small>
       </div>
 
-      <div class="p-4 md:w-80">
+      <div class="md:py-5 md:w-80">
         <h1 class="border-l-2 border-lightPurple font-semibold px-4">Scalable</h1>
         <p class="text-xs text-slate-400">Get big, quick. Solana is made to handle thousands of transactions per second, and fees for both developers and users remain less than $0.01.</p>
         <small class="text-2xl"><span class="text-blue-500">&bull;</span>163,077,581,394</small><br>
         <small class="text-xs text-slate-400">TOTAL TRANSACTIONS</small>
       </div>
-
     </div>
 
     <div>
-      <div class="p-4 md:w-80 md:-mt-20">
+      <div class="md:py-5 md:w-80 lg:-mt-20">
         <h1 class="border-l-2 border-lightYellow font-semibold px-4">Decentralized</h1>
         <p class="text-xs text-slate-400">The Solana network is validated by thousands of nodes that operate independently of each other, ensuring your data remains secure and censorship resistant.</p>
         <small class="text-2xl"><span class="text-blue-500">&bull;</span>1,675</small><br>
         <small class="text-xs text-slate-400">VALIDATOR NODES</small>
       </div>
 
-      <div class="p-4 md:w-80"> 
+      <div class="md:py-5"> 
         <h1 class="border-l-2 border-lightGreen font-semibold px-4">Energy Efficient</h1>
         <p class="text-xs text-slate-400">Solana's proof of stake network and other innovations minimize its impact on the <a href="https://solana.com/environment" class="text-lightGreen underline decoration-solid">environment.</a> Each Solana transaction uses about the same energy as a few Google searches.</p>
         <small class="text-2xl"><span class="text-blue-500">&bull;</span>0%</small><br>
@@ -152,25 +153,23 @@
 <!-- BUILD SECTION -->
 
 <section>
-  <div class="flex flex-col ml-3 my-10 md:flex-row justify-between md:justify-around">
+  <div class="flex flex-col ml-3 my-10 lg:flex-row justify-between md:justify-around">
     <div>
       <h3 class="text-white font-semibold text-4xl my-5">Build for growth.</h3>
     </div>
     <div class="justify-between space-x-1 space-y-3 md:space-x-5">
-      <!-- <ul class="flex space-x-6 list-image-none"> -->
         <button class="rounded-md bg-slate-800 text-white p-3 active:border-lighterPurple">NFTs</button>
         <button class="rounded-md bg-slate-800 text-white p-3 border-lighterPurple">DeFi</button>
         <button class="rounded-md bg-slate-800 text-white p-3 border-lighterPurple">Payments</button>
         <button class="rounded-md bg-slate-800 text-white p-3 border-lighterPurple">Gaming</button>
         <button class="rounded-md bg-slate-800 text-white p-3 border-lighterPurple">DAOs</button>
-      <!-- </ul> -->
 
     </div>
   </div>
 
-    <div class="flex flex-col-reverse bg-[#252525e2] mt-18 w-[300px] mx-auto rounded-md md:flex-row md:mx-auto lg:w-[800px]">
+    <div class="flex flex-col-reverse bg-[#252525e2] mt-18 w-[300px] mx-auto rounded-md lg:flex-row md:mx-auto lg:w-[800px]">
       <div>
-        <img class="lg:w-[1000px] lg:h-[400px]" src="../src/images/nft.png" alt="">
+        <img class="md:w-[600px] md:h-[200px] lg:w-[1000px] lg:h-[400px]" src="../src/images/nft.png" alt="">
       </div>
       <div class="text-white p-8">
         <img class="py-5" src="../src/images/icon.png" alt="">
